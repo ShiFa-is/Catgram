@@ -1,0 +1,31 @@
+// Place all the styles related to the posts controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.title {
+    font-family: cursive;
+  }
+  
+  sub-title {
+    font-family: serif;
+  }
+  
+.cover {
+    height: 100%;
+    width: 100%;
+    /* その要素を囲む親要素にdisplay: table;を指定 */
+    display: table;
+    background-image: url(/assets/top.jpg);
+    /* 背景の透過 */
+    background-color:rgba(255,255,255,0.4);
+    /* 背景色と背景画像のブレンド方法を指定する　下レイヤー色と上レイヤー色のそれぞれのRGB値を比較して、よりRGB値の高い（明るい）色を採用する */
+    background-blend-mode:lighten;
+    /* 表示領域の幅100％ 高さ100％で表示（縦横比は無視） */
+    background-size: 100% 100%;
+  }
+  
+.text-center {
+    /* 横に並べたい要素にdisplay: table-cell;を指定 */
+    display: table-cell;
+    vertical-align: middle;
+  }
